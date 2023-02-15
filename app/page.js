@@ -13,10 +13,13 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
+  SiVuedotjs,
+  SiGit,
 } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./Card";
+import Technology from "./Technology";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -26,11 +29,34 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl">Maksymilian Dendura</h1>
-            <BsFillMoonStarsFill
-              className="cursor-pointer text-2xl hover:text-teal-500"
-              onClick={() => setDarkMode(!darkMode)}
-            />
+            <div className="flex gap-4 items-center">
+              <BsFillMoonStarsFill
+                className="cursor-pointer text-2xl hover:text-teal-500"
+                onClick={() => setDarkMode(!darkMode)}
+              />
+              <div className="text-3xl text-gray-600 dark:text-gray-400">
+                <Link
+                  href="https://github.com/Noniv"
+                  className="hover:scale-110 transition-transform hover:text-teal-500"
+                  aria-label="Github"
+                  target="_blank"
+                >
+                  <AiFillGithub />
+                </Link>
+              </div>
+            </div>
           </nav>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-20 overflow-hidden p-4">
+            <Image
+              src="/photo.png"
+              fill
+              className="object-contain pt-8"
+              alt="My photo"
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+            />
+          </div>
           <div className="text-center py-6">
             <h2 className="text-4xl py-2 text-teal-600 font-medium md:text-6xl">
               Maksymilian Dendura
@@ -48,38 +74,65 @@ export default function Home() {
               holiday internship.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-            <Link
-              href="https://github.com/Noniv"
-              className="hover:scale-110 transition-transform hover:text-teal-500"
-              aria-label="Github"
-            >
-              <AiFillGithub />
-            </Link>
-          </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-20 overflow-hidden p-4">
-            <Image
-              src="/photo.png"
-              fill
-              className="object-contain pt-8"
-              alt="My photo"
-              sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
-            />
-          </div>
           <Link
-            className="flex items-center gap-2 justify-center text-lg mt-6 hover:text-teal-500 md:text-xl"
+            className="flex items-center gap-2 justify-center text-lg hover:text-teal-500 md:text-xl w-fit mx-auto"
             href="mailto:maksymilian.dendura@gmail.com"
+            target="_blank"
           >
             <FiMail />
             maksymilian.dendura@gmail.com
           </Link>
         </section>
 
-        <section className="mt-10">
-          <h3 className="text-3xl py-1 mb-6">My projects</h3>
-          <div className="lg:flex gap-10 flex-wrap justify-between">
+        <section>
+          <h3 className="text-3xl py-1 mt-10 mb-2 lg:mb-10 text-center">
+            Technologies I use
+          </h3>
+          <div className="text-2xl lg:grid lg:grid-cols-3 lg:gap-10">
+            <Technology title="Next.js">
+              <SiNextdotjs className="text-black dark:text-white" />
+            </Technology>
+            <Technology title="React.js">
+              <SiReact className="text-cyan-400" />
+            </Technology>
+            <Technology title="Vue.js">
+              <SiVuedotjs className="text-emerald-500" />
+            </Technology>
+            <Technology title="Svelte.js">
+              <SiSvelte className="text-orange-600" />
+            </Technology>
+            <Technology title="Tailwind CSS">
+              <SiTailwindcss className="text-blue-400" />
+            </Technology>
+            <Technology title="TypeScript">
+              <SiTypescript className="text-blue-600" />
+            </Technology>
+            <Technology title="HTML5">
+              <SiHtml5 className="text-orange-600" />
+            </Technology>
+            <Technology title="CSS3">
+              <SiCss3 className="text-blue-700" />
+            </Technology>
+            <Technology title="JavaScript (ES6)">
+              <SiJavascript className="text-yellow-500" />
+            </Technology>
+            <div></div>
+            <Technology title="GIT">
+              <SiGit className="text-orange-600" />
+            </Technology>
+          </div>
+          <p className="text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-400 text-center mt-4">
+            I have also a basic knowledge in raster graphics editors like GIMP
+            and design tools like Figma. My English level is around C1, proven
+            by TOEIC gold certificate.
+          </p>
+        </section>
+
+        <section className="mt-10 lg:mt-36">
+          <h3 className="text-3xl py-1 mb-6 text-center lg:mb-12">
+            My projects
+          </h3>
+          <div className="lg:grid-cols-2 lg:grid gap-10">
             <Card
               src="/site-1.png"
               title='"KOD" conference website'
