@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { FiMail } from "react-icons/fi";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsTelephone } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import {
   SiTailwindcss,
@@ -79,10 +79,16 @@ export default function Home() {
           <Link
             className="flex items-center gap-2 justify-center text-lg hover:text-teal-500 md:text-xl w-fit mx-auto"
             href="mailto:maksymilian.dendura@gmail.com"
-            target="_blank"
           >
             <FiMail />
             maksymilian.dendura@gmail.com
+          </Link>
+          <Link
+            className="flex items-center gap-2 justify-center text-lg hover:text-teal-500 md:text-xl w-fit mx-auto mt-2"
+            href="tel:+48782418841"
+          >
+            <BsTelephone />
+            +48 782 418 841
           </Link>
         </section>
 
