@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home({ src, title, description, children, href }) {
+export default function Card({ src, title, description, children, href }) {
   return (
     <Link
       href={href}
-      className="lg:basis-5/12 hover:scale-[105%] hover:rotate-1 transition-transform"
+      className="hover:scale-[105%] hover:rotate-1 transition-transform"
+      target="_blank"
     >
-      <div className="group text-center shadow-lg pb-10 rounded-xl overflow-hidden dark:bg-slate-900 h-full mb-10">
+      <div className="text-center shadow-lg pb-10 rounded-xl overflow-hidden dark:bg-slate-800 h-full mb-10">
         <Image
           src={src}
           height={950}
