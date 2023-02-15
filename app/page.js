@@ -31,17 +31,17 @@ export default function Home() {
             <h1 className="text-xl">Maksymilian Dendura</h1>
             <div className="flex gap-4 items-center">
               <BsFillMoonStarsFill
-                className="cursor-pointer text-2xl hover:text-teal-500"
+                className="cursor-pointer text-2xl hover:text-teal-500 text-black dark:text-gray-400 dark:hover:text-teal-500"
                 onClick={() => setDarkMode(!darkMode)}
               />
               <div className="text-3xl text-gray-600 dark:text-gray-400">
                 <Link
                   href="https://github.com/Noniv"
-                  className="hover:scale-110 transition-transform hover:text-teal-500"
+                  className="hover:scale-110 transition-transform hover:text-teal-500 text-black dark:text-gray-400 dark:hover:text-teal-500"
                   aria-label="Github"
                   target="_blank"
                 >
-                  <AiFillGithub />
+                  <AiFillGithub/>
                 </Link>
               </div>
             </div>
