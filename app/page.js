@@ -41,7 +41,7 @@ export default function Home() {
                   aria-label="Github"
                   target="_blank"
                 >
-                  <AiFillGithub/>
+                  <AiFillGithub />
                 </Link>
               </div>
             </div>
@@ -71,7 +71,9 @@ export default function Home() {
               <span className="text-teal-600">SKNI "KOD"</span> - a Student
               Scientific Association where I participated in projects and
               courses. I have already got my first work experience during
-              holiday internship.
+              holiday internship in{" "}
+              <span className="text-teal-600">Argonium</span> (2021) and{" "}
+              <span className="text-teal-600">Ideo</span> (2022).
             </p>
           </div>
           <Link
