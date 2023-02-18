@@ -149,6 +149,7 @@ export default function Home() {
             >
               <SiTailwindcss className="text-blue-400" />
               <SiNextdotjs className="text-black dark:text-white" />
+              <SiTypescript className="text-blue-600" />
             </Card>
             <Card
               src="/site-2.png"
