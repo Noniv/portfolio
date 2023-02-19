@@ -19,6 +19,15 @@ import {
   SiGodotengine,
 } from "react-icons/si";
 import photo from "../public/photo.png"
+import roguelike from "../public/roguelike.png"
+import site1 from "../public/site-1.png"
+import site2 from "../public/site-2.png"
+import site3 from "../public/site-3.png"
+import site4 from "../public/site-4.png"
+import site5 from "../public/site-5.png"
+import site6 from "../public/site-6.png"
+import site7 from "../public/site-7.png"
+import site8 from "../public/site-8.png"
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./Card";
@@ -141,7 +150,7 @@ export default function Home() {
           </h3>
           <div className="lg:grid-cols-2 lg:grid gap-10">
             <Card
-              src="/site-1.png"
+              src={site1}
               title='"KOD" conference website'
               description='Website made for SKNI "KOD" special conference. 25 years passed really quick!'
               href="https://kod.prz.edu.pl/konferencja"
@@ -151,7 +160,7 @@ export default function Home() {
               <SiTypescript className="text-blue-600" />
             </Card>
             <Card
-              src="/site-2.png"
+              src={site2}
               title='"Maden" hair salon'
               description="Website made as a part of my engineering project. Sadly, not a real salon."
               href="https://maden.vercel.app/"
@@ -160,7 +169,7 @@ export default function Home() {
               <SiSvelte className="text-orange-600" />
             </Card>
             <Card
-              src="/site-3.png"
+              src={site3}
               title="Pogodeo"
               description="Weather app made for internship recruitment process."
               href="https://pogodeo.vercel.app/home"
@@ -170,7 +179,7 @@ export default function Home() {
               <SiTypescript className="text-blue-600" />
             </Card>
             <Card
-              src="/site-4.png"
+              src={site4}
               title="Front End Developer Clicker"
               description="One of my first websites - simple clicker game made with pure HTML, CSS and JavaScript."
               href="https://noniv.github.io/Front-End-Developer-Clicker/"
@@ -192,7 +201,7 @@ export default function Home() {
           </p>
           <div className="lg:grid-cols-2 lg:grid gap-10">
             <Card
-              src="/site-5.png"
+              src={site5}
               title="Covideo"
               description="Controlling COVID-19 cases in different countries have never been easier."
               href="https://github.com/mateuszaliyev/covideo"
@@ -202,7 +211,7 @@ export default function Home() {
               <SiTypescript className="text-blue-600" />
             </Card>
             <Card
-              src="/site-6.png"
+              src={site6}
               title="Power law checker"
               description="A proof that almost every website's words and letters distribution follows the power law."
               href="https://st-163926-163935.vercel.app/"
@@ -211,7 +220,7 @@ export default function Home() {
               <SiTypescript className="text-blue-600" />
             </Card>
             <Card
-              src="/site-7.png"
+              src={site7}
               title="ChopTheBill"
               description="Easy costs distribution among friends. Chop the bills, literally!"
               href="https://github.com/mateuszaliyev/chopthebill"
@@ -220,7 +229,7 @@ export default function Home() {
               <SiNextdotjs className="text-black dark:text-white" />
             </Card>
             <Card
-              src="/site-8.png"
+              src={site8}
               title="Farm Assistant"
               description="Support your farm management with this application."
               href="https://github.com/marioooo0o/FarmAssisant"
@@ -230,7 +239,7 @@ export default function Home() {
               <SiJavascript className="text-yellow-500" />
             </Card>
             <Card
-              src="/roguelike.png"
+              src={roguelike}
               title="Roguelike"
               description="Not a front end project, but we gave a lot of our hearts for this game."
               href="https://github.com/skni-kod/roguelike"

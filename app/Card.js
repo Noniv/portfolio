@@ -12,8 +12,6 @@ export default function Card({ src, title, description, children, href }) {
         <div className="md:h-48 overflow-hidden">
         <Image
           src={src}
-          height={953}
-          width={1920}
           className="md:min-h-full"
           alt="Website photo"
         />
