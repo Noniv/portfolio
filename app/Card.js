@@ -10,11 +10,7 @@ export default function Card({ src, title, description, children, href }) {
     >
       <div className="text-center shadow-lg pb-10 rounded-xl overflow-hidden dark:bg-slate-800 h-full mb-10">
         <div className="md:h-48 overflow-hidden">
-        <Image
-          src={src}
-          className="md:min-h-full"
-          alt="Website photo"
-        />
+          <Image src={src} className="md:min-h-full" alt="Website photo" />
         </div>
         <h4 className="text-lg font-medium pt-8 pb-2 text-teal-600">{title}</h4>
         <div className="px-10">{description}</div>

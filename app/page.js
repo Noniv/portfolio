@@ -18,16 +18,16 @@ import {
   SiMaterialui,
   SiGodotengine,
 } from "react-icons/si";
-import photo from "../public/photo.png"
-import roguelike from "../public/roguelike.png"
-import site1 from "../public/site-1.png"
-import site2 from "../public/site-2.png"
-import site3 from "../public/site-3.png"
-import site4 from "../public/site-4.png"
-import site5 from "../public/site-5.png"
-import site6 from "../public/site-6.png"
-import site7 from "../public/site-7.png"
-import site8 from "../public/site-8.png"
+import photo from "../public/photo.png";
+import roguelike from "../public/roguelike.png";
+import site1 from "../public/site-1.png";
+import site2 from "../public/site-2.png";
+import site3 from "../public/site-3.png";
+import site4 from "../public/site-4.png";
+import site5 from "../public/site-5.png";
+import site6 from "../public/site-6.png";
+import site7 from "../public/site-7.png";
+import site8 from "../public/site-8.png";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./Card";
