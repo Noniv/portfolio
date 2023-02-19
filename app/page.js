@@ -15,6 +15,8 @@ import {
   SiJavascript,
   SiVuedotjs,
   SiGit,
+  SiMaterialui,
+  SiGodotengine,
 } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
@@ -179,6 +181,64 @@ export default function Home() {
               <SiHtml5 className="text-orange-600" />
               <SiCss3 className="text-blue-700" />
               <SiJavascript className="text-yellow-500" />
+            </Card>
+          </div>
+        </section>
+
+        <section className="mt-20 lg:mt-36">
+          <h3 className="text-3xl py-1 text-center">Team projects</h3>
+          <p className="text-md pb-8 pt-4 leading-8 text-gray-800 md:text-xl dark:text-gray-400 text-center lg:pt-6 lg:pb-12">
+            Some of these websites are not hosted on the web and contain only
+            GitHub links as I do not own them. Projects with only one
+            contributor were made together with Visual Studio Code Live Share
+            tool.
+          </p>
+          <div className="lg:grid-cols-2 lg:grid gap-10">
+            <Card
+              src="/site-5.png"
+              title="Covideo"
+              description="Controlling COVID-19 cases in different countries have never been easier."
+              href="https://github.com/mateuszaliyev/covideo"
+            >
+              <SiTailwindcss className="text-blue-400" />
+              <SiNextdotjs className="text-black dark:text-white" />
+              <SiTypescript className="text-blue-600" />
+            </Card>
+            <Card
+              src="/site-6.png"
+              title="Power law checker"
+              description="A proof that almost every website's words and letters distribution follows the power law."
+              href="https://st-163926-163935.vercel.app/"
+            >
+              <SiNextdotjs className="text-black dark:text-white" />
+              <SiTypescript className="text-blue-600" />
+            </Card>
+            <Card
+              src="/site-7.png"
+              title="ChopTheBill"
+              description="Easy costs distribution among friends. Chop the bills, literally!"
+              href="https://github.com/mateuszaliyev/chopthebill"
+            >
+              <SiMaterialui className="text-blue-500" />
+              <SiNextdotjs className="text-black dark:text-white" />
+            </Card>
+            <Card
+              src="/site-8.png"
+              title="Farm Assistant"
+              description="Support your farm management with this application."
+              href="https://github.com/marioooo0o/FarmAssisant"
+            >
+              <SiHtml5 className="text-orange-600" />
+              <SiCss3 className="text-blue-700" />
+              <SiJavascript className="text-yellow-500" />
+            </Card>
+            <Card
+              src="/roguelike.png"
+              title="Roguelike"
+              description="Not a front end project, but we gave a lot of our hearts for this game."
+              href="https://github.com/skni-kod/roguelike"
+            >
+              <SiGodotengine className="text-blue-500" />
             </Card>
           </div>
         </section>
