@@ -18,6 +18,7 @@ import {
   SiMaterialui,
   SiGodotengine,
 } from "react-icons/si";
+import photo from "../public/photo.png"
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./Card";
@@ -48,15 +49,11 @@ export default function Home() {
               </div>
             </div>
           </nav>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-20 overflow-hidden p-4">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-20 overflow-hidden">
             <Image
-              src="/photo.png"
-              fill
-              className="object-contain pt-8"
+              src={photo}
+              className="object-contain w-full h-full object-bottom pt-8"
               alt="My photo"
-              sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
             />
           </div>
           <div className="text-center py-6">
