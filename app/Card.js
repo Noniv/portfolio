@@ -13,7 +13,7 @@ export default function Card({ src, title, description, children, href }) {
           src={src}
           height={950}
           width={1900}
-          className="w-full"
+          className="w-full max-h-48"
           alt="Website photo"
         />
         <h4 className="text-lg font-medium pt-8 pb-2 text-teal-600">{title}</h4>
