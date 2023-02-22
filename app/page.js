@@ -238,6 +238,8 @@ export default function Home() {
               <SiCss3 className="text-blue-700" />
               <SiJavascript className="text-yellow-500" />
             </Card>
+          </div>
+          <div className="mt-10 flex lg:w-1/2 mx-auto">
             <Card
               src={roguelike}
               title="Roguelike"
