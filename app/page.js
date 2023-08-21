@@ -81,7 +81,9 @@ export default function Home() {
               courses. I have already got my first work experience during
               holiday internship in{" "}
               <span className="text-teal-600">Argonium</span> (2021) and{" "}
-              <span className="text-teal-600">Ideo</span> (2022).
+              <span className="text-teal-600">Ideo</span> (2022). Right now{" "}
+              <span className="text-teal-600">I'm employed</span> as a junior
+              front end developer in Argonium (since May this year).
             </p>
           </div>
           <Link
