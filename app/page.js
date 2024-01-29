@@ -128,7 +128,15 @@ export default function Home() {
             total, making corrections, optimizing for SEO and performance. I
             also participate in developing our own{" "}
             <span className="text-teal-600 font-medium">CMS</span> which
-            responds to the needs of our SEO specialists.
+            responds to the needs of our SEO specialists. You can see our work{" "}
+            <a
+              href="https://www.argonium.pl/realizacje"
+              rel="nofollow"
+              className="text-teal-600 font-medium underline"
+            >
+              here
+            </a>
+            .
           </Job>
         </section>
 
