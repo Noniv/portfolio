@@ -28,10 +28,14 @@ import site5 from "../public/site-5.png";
 import site6 from "../public/site-6.png";
 import site7 from "../public/site-7.png";
 import site8 from "../public/site-8.png";
+import sknikod from "../public/skni-kod.jpg";
+import argonium from "../public/argonium.jpg";
+import ideo from "../public/ideo.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./Card";
 import Technology from "./Technology";
+import Job from "./Job";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -82,8 +86,8 @@ export default function Home() {
               holiday internship in{" "}
               <span className="text-teal-600">Argonium</span> (2021) and{" "}
               <span className="text-teal-600">Ideo</span> (2022). Right now{" "}
-              <span className="text-teal-600">I'm employed</span> as a junior
-              front end developer in Argonium (since May this year).
+              <span className="text-teal-600">I'm employed</span> as a front end
+              developer in Argonium.
             </p>
           </div>
           <Link
@@ -100,6 +104,75 @@ export default function Home() {
             <BsTelephone />
             +48 782 418 841
           </Link>
+        </section>
+
+        <section>
+          <h3 className="text-3xl py-1 mt-10 mb-4 lg:mb-10 text-center">
+            Work experience
+          </h3>
+          <Job
+            src={argonium}
+            title="Argonium, Interactive Agency"
+            jobTitle="Frontend Developer"
+            active={true}
+            timePeriod={
+              <>
+                05.2023 - <span className="text-teal-600">present</span>
+              </>
+            }
+          >
+            I took a part in creating{" "}
+            <span className="text-teal-600 font-medium">20+</span> new websites
+            for our clients and worked on{" "}
+            <span className="text-teal-600 font-medium">100+</span> websites in
+            total, making corrections, optimizing for SEO and performance. I
+            also participate in developing our own{" "}
+            <span className="text-teal-600 font-medium">CMS</span> which
+            responds to the needs of our SEO specialists.
+          </Job>
+        </section>
+
+        <section>
+          <h3 className="text-3xl py-1 mt-10 mb-4 lg:mb-10 text-center">
+            Other experience
+          </h3>
+          <div className="flex flex-col gap-6">
+            <Job
+              src={ideo}
+              title="Ideo, Software House"
+              jobTitle="Frontend Developer - Internship"
+              timePeriod={"07.2022 - 08.2022"}
+            >
+              During the first part of internship, I created a website layout
+              based on the design with basic web technologies. During the second
+              part, I created a shop in Vue.js framework. Thanks to the help of
+              experienced mentors, I was able to improve quality of my code.
+            </Job>
+            <Job
+              src={argonium}
+              title="Argonium, Interactive Agency"
+              jobTitle="Frontend Developer - Internship"
+              timePeriod={"09.2021 - 10.2021"}
+            >
+              My first internship allowed me to work on real projects for our
+              clients and improved my knowledge of basic web technologies.
+            </Job>
+            <Job
+              src={sknikod}
+              title='SKNI "KOD"'
+              jobTitle="Member"
+              timePeriod={
+                <>
+                  12.2020 - <span className="text-teal-600">present</span>
+                </>
+              }
+            >
+              As a member of Student Scientific Association "KOD" I was able to
+              participate in many IT related projects and courses. It's the
+              place where I learned a lot about cooperation, basics of Git and
+              created our very own game!
+            </Job>
+          </div>
         </section>
 
         <section>
@@ -140,16 +213,17 @@ export default function Home() {
             </Technology>
           </div>
           <p className="text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-400 text-center mt-4">
-            I have also a basic knowledge in raster graphics editors like GIMP
+            I also have a basic knowledge in raster graphics editors like GIMP
             and design tools like Figma. My English level is around C1, proven
             by TOEIC gold certificate.
           </p>
         </section>
 
         <section className="mt-10 lg:mt-36">
-          <h3 className="text-3xl py-1 mb-6 text-center lg:mb-12">
-            My projects
-          </h3>
+          <h3 className="text-3xl py-1 text-center">Old personal projects</h3>
+          <p className="text-md pb-8 pt-4 leading-8 text-gray-800 md:text-xl dark:text-gray-400 text-center lg:pt-6 lg:pb-12">
+            Space for personal projects created before my first job experience.
+          </p>
           <div className="lg:grid-cols-2 lg:grid gap-10">
             <Card
               src={site1}
@@ -194,7 +268,7 @@ export default function Home() {
         </section>
 
         <section className="mt-20 lg:mt-36">
-          <h3 className="text-3xl py-1 text-center">Team projects</h3>
+          <h3 className="text-3xl py-1 text-center">Old team projects</h3>
           <p className="text-md pb-8 pt-4 leading-8 text-gray-800 md:text-xl dark:text-gray-400 text-center lg:pt-6 lg:pb-12">
             Some of these websites are not hosted on the web and contain only
             GitHub links as I do not own them. Projects with only one
