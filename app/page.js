@@ -133,6 +133,7 @@ export default function Home() {
               href="https://www.argonium.pl/realizacje"
               rel="nofollow"
               className="text-teal-600 font-medium underline"
+              target="_blank"
             >
               here
             </a>
